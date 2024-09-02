@@ -238,3 +238,7 @@ button {
 .cloud-low {
   animation: 15s cloud-move infinite alternate linear;
 }
+
+.work {
+  text-align: center;
+}
