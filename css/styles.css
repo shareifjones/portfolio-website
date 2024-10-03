@@ -104,6 +104,8 @@ a:active {
   display: inline-block;
   width: 33%;
   align-items: center;
+  text-align: center;
+  align-content: center;
 }
 
 @supports (display: grid) {
