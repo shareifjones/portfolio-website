@@ -69,6 +69,8 @@ a:active {
   margin: 0 auto;
   text-align: center;
   list-style-type: none;
+  align-items: center;
+  align-content: center;
 }
 
 * {
