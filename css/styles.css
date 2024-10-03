@@ -103,6 +103,7 @@ a:active {
 .grid__item {
   display: inline-block;
   width: 33%;
+  align-items: center;
 }
 
 @supports (display: grid) {
