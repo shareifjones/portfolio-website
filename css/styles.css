@@ -247,8 +247,10 @@ button {
   animation: 15s cloud-move infinite alternate linear;
 }
 
-.work {
+.work_profile {
   text-align: center;
+  align-items: center;
+  align-content: center;
 }
 
 .meet {
