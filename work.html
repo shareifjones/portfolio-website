@@ -1,177 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Shareif Jones showcasing projects and skills.">
     <title>Work by Shareif Jones</title>
     <link rel="shortcut icon" href="img/sj-logo1.png">
-    <link rel="stylesheet" type="text/css" href="css/normalizecss">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.production.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/styles.production.css">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <header class="page-header">
-        <img src="img/name-logo.png"
-            alt="Personal logo of Shareif Jones, a text logo in uppercase letters that consist of my name"
-            class="page-header__item">
-        <nav class="main-navigation page-header__item">
-            <ul role="menubar" class="navigation-list">
-                <li role="presentation">
-                    <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item">Home</a>
-                </li>
-                <li role="presentation">
-                    <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-                </li>
-                <li role="presentation">
-                    <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-                </li>
-                <li role="presentation">
-                    <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <section>
-        <div class="profile">
-            <h1>Work</h1>
-            <h4>Below you will find some of the projects I worked on with links and descriptions:
-            </h4>
+        <div class="header-container">
+            <img src="img/name-logo.png" alt="Shareif Jones Personal Logo" class="logo">
+            <nav class="main-navigation">
+                <ul class="navigation-list">
+                    <li><a href="index.html" class="navigation-link">Home</a></li>
+                    <li><a href="about.html" class="navigation-link">About</a></li>
+                    <li><a href="contact.html" class="navigation-link">Contact</a></li>
+                    <li><a href="work.html" class="navigation-link">Work</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="grid">
-            <div class="grid__item">
-                <h2>Pokedex</h2>
-                <div>
-                    <a href="https://shareifjones.github.io/simple-js-app/" target="_blank"><img src="img/charizard.png"
-                            width="400" height="300"> </a>
-                </div>
-                <p>
-                    The Pokedex is a web application that displays a list of Pokémon using data fetched from an API.
-                </p>
-                <p><i>Click the screenshot to take you to the application.</i></p>
-                <p>
-                    <b>Technologies used:</b>
-                </p>
-                <p>HTML, CSS, JavaScript, external APIs (Pokémon API), Bootstrap.</p>
+    </header>
 
-                <a href="https://github.com/shareifjones/simple-js-app" target="_blank">See Project on
+    <main>
+        <section class="profile">
+            <h1 class="section-title">Work</h1>
+            <p class="section-description">Below you will find some of the projects I worked on, with links and
+                descriptions:</p>
+        </section>
+
+        <section class="project-grid">
+            <!-- Project 1 -->
+            <div class="grid-item">
+                <h2 class="project-title">Pokedex</h2>
+                <a href="https://shareifjones.github.io/simple-js-app/" target="_blank">
+                    <img src="img/charizard.png" alt="Screenshot of Pokedex application" class="project-image">
+                </a>
+                <p class="project-description">The Pokedex is a web application that displays a list of Pokémon using
+                    data fetched from an API.</p>
+                <p class="project-note"><i>Click the screenshot to view the application.</i></p>
+                <p><b>Technologies used:</b> HTML, CSS, JavaScript, APIs (Pokémon API), Bootstrap.</p>
+                <a href="https://github.com/shareifjones/simple-js-app" target="_blank" class="project-link">View
+                    Project on GitHub</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="grid-item">
+                <h2 class="project-title">Meet App</h2>
+                <a href="https://shareifjones.github.io/meet/" target="_blank">
+                    <img src="img/meetApp.jpeg" alt="Screenshot of Meet App" class="project-image">
+                </a>
+                <p class="project-description">Meet App allows users to explore events by location and offers
+                    interactive features with event filtering and data visualizations.</p>
+                <p class="project-note"><i>Click the screenshot to view the application.</i></p>
+                <p><b>Technologies used:</b> React, PWA, Google Calendar API, AWS Lambda, Serverless, TDD.</p>
+                <a href="https://github.com/shareifjones/meet" target="_blank" class="project-link">View Project on
                     GitHub</a>
             </div>
 
-
-            <div class="grid__item">
-                <h2> Meet App</h2>
-                <div class="meet">
-                    <a href="https://shareifjones.github.io/meet/" target="_blank"><img src="img/meetApp.jpeg"
-                            width="400" height="300"> </a>
-                </div>
-                <p>
-                    "Meet App" is a React application that allows users to explore events by searching or selecting
-                    a
-                    city and choosing how many events to display.
-                    The app includes interactive features like event filtering based on location, city
-                    search/specification, and data visualizations with multiple charts.
-                    The app also provides alerts based on the users environment and search criteria ensuring a
-                    smooth
-                    user experience.
-                <p><i>Click the screenshot to take you to the application.</i></p>
-                </p>
-                <p>
-
-                    <b>Technologies used:</b>
-                </p>
-                <p>
-                    React, VS Code, PWA Features, Google Calendar API, Github, AWS Lambda, Serverless, TDD.
-                </p>
-                <a href="https://github.com/shareifjones/meet" target="_blank">See project on GitHub</a>
+            <!-- Project 3 -->
+            <div class="grid-item">
+                <h2 class="project-title">myFlix (Frontend)</h2>
+                <a href="https://shareif-flix.netlify.app/" target="_blank">
+                    <img src="img/myFlix.png" alt="Screenshot of myFlix Frontend" class="project-image">
+                </a>
+                <p class="project-description">React-based web app for managing movies and user profiles, with
+                    token-based authentication.</p>
+                <p class="project-note"><i>Click the screenshot to view the application.</i></p>
+                <p><b>Technologies used:</b> React, Redux, React Bootstrap, React Router.</p>
+                <a href="https://github.com/shareifjones/myFlix-client" target="_blank" class="project-link">View
+                    Project on GitHub</a>
             </div>
 
-
-            <div class="grid__item">
-                <h2> myFlix (frontend)</h2>
-                <div>
-                    <a href="https://shareif-flix.netlify.app/" target="_blank"><img src="img/myFlix.png" width="400"
-                            height="300"> </a>
-                </div>
-                <p>
-                    The myFlix frontend is a React-based web application that allows users to sign-up and log-in the
-                    app, browse and search through a list of movies,
-                    view detailed information about the movies,
-                    and manage their profile/account information and favorite movies, all while being authenticated via
-                    a token-based login
-                    system.
-                    The project is hosted on Netlify.
-                </p>
-                <p><i>Click the screenshot to take you to the application.</i></p>
-                <p>
-                    <b>Technologies used:</b>
-                </p>
-                <p>
-                    React, React Bootstrap, Redux, React Router.
-                </p>
-                <a href="https://github.com/shareifjones/myFlix-client" target="_blank">See project on GitHub</a>
+            <!-- Project 4 -->
+            <div class="grid-item">
+                <h2 class="project-title">myFlix (Backend)</h2>
+                <p class="project-description">A RESTful API built with Express and MongoDB for the myFlix app,
+                    featuring JWT authentication and user management.</p>
+                <a href="https://github.com/shareifjones/movie_api" target="_blank" class="project-link">View Project on
+                    GitHub</a>
             </div>
 
-
-            <div class="grid__item">
-                <h2>myFlix (backend)</h2>
-                <p>
-                    This code sets up a RESTful API for my movie app myFlix using Express, MongoDB, and Mongoose. The
-                    API allows users to sign-up, manage their profiles, update their favorite movies list, and access
-                    movie
-                    details by title, genre, or director. It includes authentication with JWT, validation for user
-                    input, and CORS settings to control access from specific origins. The app also serves static files
-                    and handles errors gracefully.
-                </p>
-
-                <a href="https://github.com/shareifjones/movie_api">See project on GitHub</a>
+            <!-- Project 5 -->
+            <div class="grid-item">
+                <h2 class="project-title">myFlix Angular</h2>
+                <a href="https://shareifjones.github.io/myFlix-Angular-App/" target="_blank">
+                    <img src="img/myFlixAngular.png" alt="Screenshot of myFlix Angular App" class="project-image">
+                </a>
+                <p class="project-description">Angular-based client for myFlix with features for managing favorite
+                    movies and user profiles.</p>
+                <p class="project-note"><i>Click the screenshot to view the application.</i></p>
+                <p><b>Technologies used:</b> Angular, CSS, TypeScript, MongoDB.</p>
+                <a href="https://github.com/shareifjones/myFlix-Angular-client" target="_blank"
+                    class="project-link">View Project on GitHub</a>
             </div>
 
-
-            <div class="grid__item">
-                <h2>myFlix Angular</h2>
-                <div>
-                    <a href="https://shareifjones.github.io/myFlix-Angular-App/" target="_blank"><img
-                            src="img/myFlixAngular.png" width="400" height="300"> </a>
-                </div>
-                <p>
-                    Using an already existing server-side code, I build the client side to myFlix. It displays a list of
-                    movies after logging in and signing up that you're able to add/ remove to your favorites list and
-                    also update your profile.
-                </p>
-                <p><i>Click the screenshot to take you to the application.</i></p>
-                <p>
-                    <b>Technologies used:</b>
-                </p>
-                <p>
-                    Angular, CSS, MongoDB, TypeScript
-                </p>
-                <a href="https://github.com/shareifjones/myFlix-Angular-client">See project on Github</a>
+            <!-- Placeholder Project -->
+            <div class="grid-item">
+                <h2 class="project-title">Your Project?</h2>
+                <p class="project-description">I can help you realize front-end and back-end projects using React.js,
+                    JavaScript, Java, HTML, and CSS.</p>
+                <a href="#" class="project-link">Contact Me</a>
             </div>
+        </section>
+    </main>
 
-
-            <div class="grid__item">
-                <h2>Your Project?</h2>
-                <p>
-                    I can help in realizing front-end and back-end projects with the following technologies: React.js,
-                    JavaScript, Java, JavaFX, HTML, and CSS. I am also happy to learn other technologies if needed.
-                </p>
-                <a href="#">Contact Me</a>
-            </div>
-        </div>
-    </section>
     <footer class="page-footer">
-        <p>Find Me On</p>
+        <p class="footer-title">Find Me On</p>
         <div class="social-media">
-            <a href="https://www.linkedin.com/in/shareif-jones-719b46144/" target="_blank"><img
-                    src="img/linkedin-logo.svg" alt="LinkedIn"></a>
-            <a href="https://github.com/shareifjones" target="_blank"><img src="img/github_logo.svg" alt="GitHub"></a>
-            <a href="https://x.com/ShareifTech" target="_blank"><img src="img/twitter_logo.svg" alt="Twitter"></a>
-
+            <a href="https://www.linkedin.com/in/shareif-jones-719b46144/" target="_blank">
+                <img src="img/linkedin-logo.svg" alt="LinkedIn" class="social-icon">
+            </a>
+            <a href="https://github.com/shareifjones" target="_blank">
+                <img src="img/github_logo.svg" alt="GitHub" class="social-icon">
+            </a>
+            <a href="https://x.com/ShareifTech" target="_blank">
+                <img src="img/twitter_logo.svg" alt="Twitter" class="social-icon">
+            </a>
         </div>
     </footer>
 </body>
