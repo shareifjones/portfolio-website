@@ -351,3 +351,15 @@ main {
   max-width: 1200px;
   /* Limit the width of the grid */
 }
+
+.about-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  /* Use full height of the viewport */
+  padding: 20px;
+  /* Optional spacing */
+}
