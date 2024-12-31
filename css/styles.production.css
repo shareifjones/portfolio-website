@@ -363,3 +363,39 @@ main {
   padding: 20px;
   /* Optional spacing */
 }
+
+table {
+  border-collapse: collapse;
+  /* Remove space between table cells */
+  width: 60%;
+  /* Adjust the width of the table */
+  text-align: center;
+  /* Center the text inside the table cells */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Add a subtle shadow for aesthetics */
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  /* Add borders to cells */
+  padding: 12px;
+  /* Add padding for spacing */
+}
+
+thead {
+  background-color: #f4f4f4;
+  /* Light gray background for header */
+  font-weight: bold;
+  /* Make header text bold */
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+  /* Alternate row color for better readability */
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+  /* Highlight row on hover */
+}
